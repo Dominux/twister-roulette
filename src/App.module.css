@@ -1,25 +1,44 @@
 :root {
-  --size: 10vmax;
+  --size: 35vh;
+  --text-size: 5.5vw;
 }
 
 .App {
+  font-size: var(--text-size);
   text-align: center;
   background-color: #0099ff;
   height: 100vh;
 }
 
-.top {
-  padding: var(--size) 0;
+.topPanel {
+  background-color: white;
+  height: var(--size);
+}
+
+.svgWrapper {
+  width: 100%;
 }
 
 .svg {
   position: absolute;
-  width: 100%;
-  top: 0;
+  top: var(--size);
   left: 0;
 }
 
-.svg_text {
-  z-index: 1;
-  position: relative;
+.texts {
+  z-index: 5;
+  position: absolute;
+  top: var(--size);
+  left: 0;
+  width: 100%;
+
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  height: calc(var(--text-size) * 3);
+}
+
+.bottomText {
+  color: white;
 }
