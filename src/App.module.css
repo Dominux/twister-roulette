@@ -1,0 +1,25 @@
+:root {
+  --size: 10vmax;
+}
+
+.App {
+  text-align: center;
+  background-color: #0099ff;
+  height: 100vh;
+}
+
+.top {
+  padding: var(--size) 0;
+}
+
+.svg {
+  position: absolute;
+  width: 100%;
+  top: 0;
+  left: 0;
+}
+
+.svg_text {
+  z-index: 1;
+  position: relative;
+}
