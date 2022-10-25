@@ -12,5 +12,13 @@ And it's clear that we don't need to use an app for such a simple task. So I dec
 
 The main thing here (which another project doesn't have BTW) is providing [PWA](https://web.dev/progressive-web-apps/). This feature grants us ability to  use our web apps like if they would be native ones. Hence you can install it and use as an app on your device:
 
-![image](https://user-images.githubusercontent.com/55978340/197776978-918f7a01-d5e9-463f-b281-8c139657c4e3.png)
-
+<table>
+  <tr>
+    <td> <img src="https://user-images.githubusercontent.com/55978340/197781056-1c5d5346-5034-492d-9cfe-518c2e3ca86b.png"  alt="desktop" width="520px"</td>
+    <td><img src="https://user-images.githubusercontent.com/55978340/197779047-7fc9a6d9-b970-4a9b-9c08-56afb803c165.png" alt="mobile" width="360px"></td>
+   </tr> 
+   <tr>
+      <td>Desktop</td>
+      <td>Mobile</td>
+  </tr>
+</table>
