@@ -1,19 +1,44 @@
-import type { Component } from 'solid-js'
+import { Component, createSignal } from 'solid-js'
 
-import logo from './logo.svg'
+import getRandom from './logic'
+
+import wave from './wave.svg'
 import styles from './App.module.css'
 
 const App: Component = () => {
+  const [initSide, initLimb, initColor] = getRandom()
+  const [getSide, setSide] = createSignal(initSide)
+  const [getLimb, setLimb] = createSignal(initLimb)
+  const [getColor, setColor] = createSignal(initColor)
+
+  function onClick(_event: MouseEvent) {
+    const [newSide, newLimb, newColor] = getRandom()
+    setSide(newSide)
+    setLimb(newLimb)
+    setColor(newColor)
+  }
+
   return (
-    <div class={styles.App}>
+    <div
+      classList={{
+        [styles.App]: true,
+        [styles[getColor().toLowerCase()]]: true,
+      }}
+      onClick={onClick}
+    >
       <div class={styles.topPanel}></div>
 
       <div class={styles.svgWrapper}>
         <div class={styles.texts}>
-          <div class={styles.topText}>Right hand</div>
-          <div class={styles.bottomText}>Blue</div>
+          <div class={styles.topText}>
+            {getSide()} {getLimb()}
+          </div>
+          <div class={styles.bottomText}>
+            <b>{getColor()}</b>
+          </div>
         </div>
-        <img src={logo} class={styles.svg} />
+
+        <img src={wave} class={styles.svg} />
       </div>
     </div>
   )

@@ -1,13 +1,14 @@
 :root {
   --size: 35vh;
-  --text-size: 5.5vw;
+  --text-size: 10vw;
+  --k: 0.5;
 }
 
 .App {
   font-size: var(--text-size);
   text-align: center;
-  background-color: #0099ff;
   height: 100vh;
+  user-select: none;
 }
 
 .topPanel {
@@ -28,7 +29,7 @@
 .texts {
   z-index: 5;
   position: absolute;
-  top: var(--size);
+  top: calc(var(--size) - var(--text-size) * var(--k));
   left: 0;
   width: 100%;
 
@@ -41,4 +42,20 @@
 
 .bottomText {
   color: white;
+}
+
+.red {
+  background-color: red;
+}
+
+.yellow {
+  background-color: #f7e200;
+}
+
+.green {
+  background-color: #00cb29;
+}
+
+.blue {
+  background-color: #0099ff;
 }
