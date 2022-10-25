@@ -7,7 +7,8 @@ export default defineConfig({
     solidPlugin(),
     VitePWA({
       registerType: 'autoUpdate',
-      devOptions: { enabled: true },
+      // devOptions: { enabled: true },
+      scope: '/twister-roulette/',
     }),
   ],
   server: {
