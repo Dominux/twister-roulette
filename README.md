@@ -1,35 +1,13 @@
-## Usage
+# Twister roulette
 
-Those templates dependencies are maintained via [pnpm](https://pnpm.io) via `pnpm up -Lri`.
+*Inspired by [another project](https://twister-roulette.com/ru)*
 
-This is the reason you see a `pnpm-lock.yaml`. That being said, any package manager will work. This file can be safely be removed once you clone a template.
+### [Online Demo](https://dominux.github.io/twister-roulette)
 
-```bash
-$ npm install # or pnpm install or yarn install
-```
+## Why?
 
-### Learn more on the [Solid Website](https://solidjs.com) and come chat with us on our [Discord](https://discord.com/invite/solidjs)
+One day at some party we played Twister and we needed the roulette. And one dude decided to download some first found app on his phone. Moreover it was downloading and installing for around __a minute__!
 
-## Available Scripts
+And it's clear that we don't need to use an app for such a simple task. So I decided to create my own implementation.
 
-In the project directory, you can run:
-
-### `npm dev` or `npm start`
-
-Runs the app in the development mode.<br>
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
-
-The page will reload if you make edits.<br>
-
-### `npm run build`
-
-Builds the app for production to the `dist` folder.<br>
-It correctly bundles Solid in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.<br>
-Your app is ready to be deployed!
-
-## Deployment
-
-You can deploy the `dist` folder to any static host provider (netlify, surge, now, etc.)
-# twister-roullete
+The main thing here (which another project doesn't have BTW) is providing [PWA](https://web.dev/progressive-web-apps/). This feature grants us ability to  use our web apps like if they would be native ones.
