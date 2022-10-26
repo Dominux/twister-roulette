@@ -6,7 +6,7 @@
 
 ## Why?
 
-One day at some party we played Twister and we needed the roulette. And one dude decided to download some first found app on his phone. Moreover it was downloading and installing for around __a minute__!
+One day at some party we were playing Twister and we needed the roulette. And one dude decided to download some first found app on his phone. Moreover it was downloading and installing for around __a minute__!
 
 And it's clear that we don't need to use an app for such a simple task. So I decided to create my own implementation.
 
