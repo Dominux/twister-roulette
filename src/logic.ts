@@ -10,3 +10,8 @@ const randomEnumValue = (enumeration: { [x: string]: any }) => {
 export default function getRandom(): [Side, Limb, Color] {
   return [randomEnumValue(Side), randomEnumValue(Limb), randomEnumValue(Color)]
 }
+
+export function setTitle(side: Side, limb: Limb, color: Color) {
+  // Setting title
+  document.title = `${side} ${limb}`
+}

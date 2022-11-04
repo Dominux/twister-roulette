@@ -1,6 +1,6 @@
 import { Component, createSignal } from 'solid-js'
 
-import getRandom from './logic'
+import getRandom, { setTitle } from './logic'
 
 import wave from './wave.svg'
 import styles from './App.module.css'
@@ -11,11 +11,16 @@ const App: Component = () => {
   const [getLimb, setLimb] = createSignal(initLimb)
   const [getColor, setColor] = createSignal(initColor)
 
+  setTitle(getSide(), getLimb(), getColor())
+
   function onClick(_event: MouseEvent) {
     const [newSide, newLimb, newColor] = getRandom()
     setSide(newSide)
     setLimb(newLimb)
     setColor(newColor)
+
+    // Setting title
+    setTitle(newSide, newLimb, newColor)
   }
 
   return (
