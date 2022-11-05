@@ -14,4 +14,7 @@ export default function getRandom(): [Side, Limb, Color] {
 export function setTitle(side: Side, limb: Limb, color: Color) {
   // Setting title
   document.title = `${side} ${limb}`
+
+  // Setting favicon
+  const href = `https://`
 }
