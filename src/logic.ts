@@ -12,9 +12,11 @@ export default function getRandom(): [Side, Limb, Color] {
 }
 
 export function setTitle(side: Side, limb: Limb, color: Color) {
+  const href = `https://raw.githubusercontent.com/Dominux/twister-roulette/main/src/assets/${color.toLowerCase()}.ico`
+
   // Setting title
   document.title = `${side} ${limb}`
 
   // Setting favicon
-  const href = `https://`
+  document.querySelector("link[rel~='icon']").href = href
 }
