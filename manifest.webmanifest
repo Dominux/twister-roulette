@@ -1,0 +1,23 @@
+{
+  "name": "twister-roulette",
+  "short_name": "twister-roulette",
+  "start_url": "/twister-roulette/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#ffffff",
+  "lang": "en",
+  "scope": "/twister-roulette/",
+  "icons": [
+    {
+      "src": "assets/android-chrome-192x192.60aab165.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "assets/android-chrome-512x512.120edf8e.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
+    }
+  ]
+}
