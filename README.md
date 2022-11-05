@@ -1,6 +1,6 @@
 # Twister roulette
 
-*Inspired by [another project](https://twister-roulette.com/ru)*
+*Inspired by [another project](https://twister-roulette.com/en)*
 
 ### [Online Demo](https://dominux.github.io/twister-roulette)
 
