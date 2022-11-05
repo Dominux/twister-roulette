@@ -38,6 +38,7 @@ The main thing here (which another project doesn't have BTW) is providing [PWA](
 ![image](https://user-images.githubusercontent.com/55978340/200113520-7c540d8c-2168-4579-b8e1-ccf190abf6ae.png)
 ![image](https://user-images.githubusercontent.com/55978340/200113508-b7434ac2-5327-4e32-b297-b4b838a1843d.png)
 
+</br>
 
 ## Running locally
 
